@@ -5,6 +5,8 @@ public class Employee {
 	private String ename;
 	private int sal;
 	private String role;
+	
+	
 	public int getEid() {
 		return eid;
 	}
