@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="onetomany.Vehicle" table="vehicle">
+
+<id column="vid" name="vid" type="int" />
+		
+<property column="vname" name="vname" type="string" />
+		<many-to-one class="onetomany.Customer"  name="customer">
+			<column name="new_id" not-null="true"></column>
+		</many-to-one>
+</class>
+</hibernate-mapping>
